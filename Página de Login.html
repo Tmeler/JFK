@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="CSS Pagina JFK Viagens.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pacotes.html">Pacotes</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Login</h1>
+
+
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Entrar</button>
+                <button type="button" id="criar-conta">Criar Conta</button>
+            </div>
+        </form>
+
+             <form id="cadastro-form" style="display: none;">
+            <div class="form-group">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Categorias de Interesse:</label>
+                <div>
+                    <input type="checkbox" id="praia" name="categorias-interesse" value="praia">
+                    <label for="praia">Praia</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="campo" name="categorias-interesse" value="campo">
+                    <label for="campo">Campo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="nacionais" name="categorias-interesse" value="nacionais">
+                    <label for="nacionais">Nacionais</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="internacionais" name="categorias-interesse" value="internacionais">
+                    <label for="internacionais">Internacionais</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="serra" name="categorias-interesse" value="serra">
+                    <label for="serra">Serra</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cidade" name="categorias-interesse" value="cidade">
+                    <label for="cidade">Cidade</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="login-cadastro">Login:</label>
+                <input type="text" id="login-cadastro" name="login-cadastro" required>
+            </div>
+            <div class="form-group">
+                <label for="senha-cadastro">Senha:</label>
+                <input type="password" id="senha-cadastro" name="senha-cadastro" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Salvar Dados</button>
+                <button type="button" id="cancelar-cadastro">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const criarContaButton = document.getElementById('criar-conta');
+        const cadastroForm = document.getElementById('cadastro-form');
+        const cancelarCadastroButton = document.getElementById('cancelar-cadastro');
+
+        criarContaButton.addEventListener('click', () => {
+            loginForm.style.display = 'none';
+            cadastroForm.style.display = 'block';
+        });
+
+        cancelarCadastroButton.addEventListener('click', () => {
+            loginForm.style.display = 'block';
+            cadastroForm.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
+
+    <a href="cadastro.html">Criar Conta</a>
+
+</body>
+</html>
